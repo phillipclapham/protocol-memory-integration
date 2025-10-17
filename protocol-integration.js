@@ -104,6 +104,7 @@ class ProtocolIntegration {
 
       // Update all site sections
       this.updateCurrentState(this.data.fields?.current_state);
+      this.updateHeaderAvatar(this.data.avatar_url);
       await this.updateAbout(this.data.fields?.identity, this.data.fields?.about);
       this.updateProjects(this.data.seeds);
       this.updateExpertise(this.data.contexts);
@@ -189,6 +190,22 @@ class ProtocolIntegration {
         ` : ''}
       </div>
     `;
+  }
+
+  /**
+   * Update header avatar element
+   * Displays avatar in .profile-avatar element if it exists
+   *
+   * @param {string} avatarUrl - Gravatar URL from API
+   */
+  updateHeaderAvatar(avatarUrl) {
+    const avatarEl = document.querySelector('.profile-avatar');
+    if (!avatarEl) return;
+
+    if (avatarUrl) {
+      avatarEl.style.backgroundImage = `url('${avatarUrl}')`;
+      avatarEl.classList.add('has-avatar');
+    }
   }
 
   /**
