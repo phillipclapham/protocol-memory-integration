@@ -1,14 +1,15 @@
 # Protocol Memory Library Hosting & Distribution
 
-**Status**: Ready for v1.0.0 release
+**Status**: v1.0.0 Released ✅
 **Date**: October 17, 2025
 **Distribution**: jsdelivr CDN via GitHub Releases
+**Public Repo**: [protocol-memory-integration](https://github.com/phillipclapham/protocol-memory-integration)
 
 ---
 
 ## Overview
 
-The protocol-integration.js library is distributed via **jsdelivr CDN** using GitHub releases. This provides free, reliable CDN hosting with automatic versioning and caching.
+The protocol-integration.js library is distributed via **jsdelivr CDN** using GitHub releases from the public [protocol-memory-integration](https://github.com/phillipclapham/protocol-memory-integration) repository. This provides free, reliable CDN hosting with automatic versioning and caching.
 
 ---
 
@@ -38,81 +39,92 @@ Download from [GitHub Releases](https://github.com/phillipclapham/protocol-memor
 2. Place in your project directory
 3. Include with relative paths
 
+### API Access
+
+**Public API Key** (for custom integrations):
+```
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyZnV4aWZ4cGh0cXNya3VvaWZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwNTY5NzUsImV4cCI6MjA3MzYzMjk3NX0.i_OioOUbgn6BN-38-ps26siSY4_iRH6Ac3boAHywPng
+```
+
+**Location**: Also available in the web app at **Settings → API** (coming in Session 22I)
+
+**Usage**:
+- JavaScript library includes this key by default (no manual configuration needed)
+- For custom integrations (Python, Ruby, PHP, etc.), use this key in the `Authorization` header
+- See [INTEGRATION_GUIDE.md](INTEGRATION_GUIDE.md) for examples in 7 languages
+
 ---
 
 ## For Maintainers
 
+**Note**: This private repo is the source. Releases are published to the public [protocol-memory-integration](https://github.com/phillipclapham/protocol-memory-integration) repo.
+
 ### Creating a New Release
 
-**1. Sync from main repo** (protocol-memory):
+**1. Develop in this repo** (protocol-memory):
+
+```bash
+cd /Users/phillipclapham/Documents/protocol-memory
+# Make changes to js/protocol-integration.js and css/protocol-memory.css
+git add js/protocol-integration.js css/protocol-memory.css
+git commit -m "Feature: XYZ"
+git push origin main
+```
+
+**2. Sync to public repo**:
 
 ```bash
 cd /Users/phillipclapham/Documents/protocol-memory-integration
 cp ../protocol-memory/js/protocol-integration.js .
 cp ../protocol-memory/css/protocol-memory.css .
-```
-
-**2. Commit all changes**:
-
-```bash
 git add protocol-integration.js protocol-memory.css
-git commit -m "Release v1.0.0 - Gravatar integration + UI polish"
+git commit -m "Release v1.0.1 - XYZ improvements"
 git push origin main
 ```
 
-**3. Create git tag**:
+**3. Create git tag** (in public repo):
 
 ```bash
-git tag -a v1.0.0 -m "Protocol Memory Integration v1.0.0
+git tag -a v1.0.1 -m "Protocol Memory Integration v1.0.1
 
 Features:
-- Gravatar avatar integration
-- Profile picture support (server-side + client-side fallback)
-- UI bug fixes (zoom icons, Instagram icon, label text)
-- Enhanced avatar styles with hover effects
+- XYZ improvements
+- Bug fixes
 
-Library: protocol-integration.js (720 lines)
-CSS: protocol-memory.css (1,370 lines)
+Library: protocol-integration.js
+CSS: protocol-memory.css
 "
 
-git push origin v1.0.0
+git push origin v1.0.1
 ```
 
-**4. Create GitHub Release**:
+**4. Create GitHub Release** (in public repo):
 
 ```bash
-gh release create v1.0.0 \
+gh release create v1.0.1 \
   protocol-integration.js \
   protocol-memory.css \
   LIBRARY_HOSTING.md \
   README.md \
-  --title "Protocol Memory Integration v1.0.0" \
+  --title "Protocol Memory Integration v1.0.1" \
   --notes "**Protocol Memory Site Integration Library**
 
-## What's New in v1.0.0
+## What's New in v1.0.1
 
 ### Features
-- **Gravatar Integration**: Professional profile avatars for public profiles
-- **GravatarHelper Class**: Easy avatar URL generation from email
-- **Enhanced About Section**: Avatar display with fallback
-- **UI Polish**: Fixed zoom icons, Instagram cutoff, label text sizing
+- XYZ improvements
+- Bug fixes
 
 ### Usage
 \`\`\`html
-<script src=\"https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.0/protocol-integration.js\"></script>
-<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.0/protocol-memory.css\">
+<script src=\"https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.1/protocol-integration.js\"></script>
+<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.1/protocol-memory.css\">
 
 <script>
   const integration = new ProtocolIntegration('your-username');
   integration.init();
 </script>
 \`\`\`
-
-### Files
-- **protocol-integration.js**: Main library (720 lines)
-- **protocol-memory.css**: Styling (1,370 lines)
-- **LIBRARY_HOSTING.md**: Distribution & versioning guide
-- **README.md**: Complete integration guide (was INTEGRATION_GUIDE.md)
 
 ### Documentation
 - [Integration Guide](https://github.com/phillipclapham/protocol-memory-integration/blob/main/README.md)
@@ -123,7 +135,7 @@ gh release create v1.0.0 \
 **5. Verify CDN availability** (wait ~5 minutes for jsdelivr to index):
 
 ```bash
-curl -I https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.0/protocol-integration.js
+curl -I https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.1/protocol-integration.js
 # Should return 200 OK
 ```
 
@@ -200,13 +212,13 @@ Bug fixes (backward compatible):
 
 ### Required Files
 
-1. **protocol-integration.js** (720 lines)
+1. **js/protocol-integration.js** (720 lines)
    - ProtocolIntegration class
    - GravatarHelper class
    - Modal system
    - Auto-refresh logic
 
-2. **protocol-memory.css** (1,370 lines)
+2. **css/protocol-memory.css** (1,370 lines)
    - Complete design system
    - Avatar styles
    - Modal styles
@@ -218,7 +230,7 @@ Bug fixes (backward compatible):
    - Versioning guide
    - Troubleshooting
 
-4. **README.md** (620 lines)
+4. **INTEGRATION_GUIDE.md** (620 lines)
    - Comprehensive usage documentation
    - API reference
    - Examples for 7 languages
@@ -277,57 +289,38 @@ Before creating a release:
 
 ---
 
-## Alternative: Separate Public Repo
+## Current Architecture: Separate Public Repo ✅
 
-If main protocol-memory repo must stay fully private:
+**Status**: Implemented
 
-### Create Public Library Repo
+The library is distributed from a separate public repo ([protocol-memory-integration](https://github.com/phillipclapham/protocol-memory-integration)) while this repo (protocol-memory) remains private.
 
-```bash
-# Create new public repo
-mkdir protocol-memory-integration
-cd protocol-memory-integration
-git init
+### Benefits
 
-# Copy library files
-cp ../protocol-memory/js/protocol-integration.js .
-cp ../protocol-memory/css/protocol-memory.css .
-cp ../protocol-memory/INTEGRATION_GUIDE.md README.md
+- **Privacy**: Main project code stays private
+- **CDN Access**: jsdelivr works with public repo
+- **Clean Separation**: Library-only repo for users
+- **Simple Sync**: Copy 2 files when releasing
 
-# Initial commit
-git add .
-git commit -m "Initial release v1.0.0"
+### Repository Structure
 
-# Push to GitHub (create repo first via gh or web)
-git remote add origin https://github.com/phillipclapham/protocol-memory-integration.git
-git push -u origin main
+**Private repo** (protocol-memory):
+- Full project source code
+- Development happens here
+- Contains: `js/protocol-integration.js`, `css/protocol-memory.css`
 
-# Tag version
-git tag v1.0.0
-git push origin v1.0.0
-
-# Create release
-gh release create v1.0.0 \
-  protocol-integration.js \
-  protocol-memory.css \
-  --title "Protocol Memory Integration v1.0.0" \
-  --notes "Initial public release"
-```
-
-**CDN URLs** (separate repo):
-
-```
-https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.0/protocol-integration.js
-https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.0/protocol-memory.css
-```
+**Public repo** ([protocol-memory-integration](https://github.com/phillipclapham/protocol-memory-integration)):
+- Distribution only
+- Files in root: `protocol-integration.js`, `protocol-memory.css`
+- Public releases with CDN access
 
 ---
 
 ## Support
 
-**Issues**: [GitHub Issues](https://github.com/phillipclapham/protocol-memory-integration/issues)
-**Docs**: [README.md](README.md)
-**Source**: [Protocol Memory](https://github.com/phillipclapham/protocol-memory)
+**Issues**: [GitHub Issues](https://github.com/phillipclapham/protocol-memory/issues)
+**Docs**: [INTEGRATION_GUIDE.md](INTEGRATION_GUIDE.md)
+**Email**: <support@protocolmemory.com>
 
 ---
 
