@@ -124,7 +124,7 @@ Authorization: Bearer YOUR_SUPABASE_ANON_KEY
 Content-Type: application/json
 ```
 
-**Get your key**: Sign up at [protocolmemory.com](https://protocol-memory.pages.dev), find in Settings → API
+**Get your key**: The library uses Protocol Memory's public API with a built-in key. For custom integrations, you'll need your own Supabase project or contact support.
 
 ### Response
 
@@ -421,9 +421,9 @@ API responses cached for 5 minutes. Use `Cache-Control: no-cache` header to bypa
 **Problem**: Missing or invalid API key
 
 **Solution**:
-1. Sign up at [Protocol Memory](https://protocol-memory.pages.dev)
-2. Find API key in Settings → API
-3. Include in `Authorization: Bearer YOUR_KEY` header
+1. Sign up at [Protocol Memory](https://protocolmemory.com)
+2. The JavaScript library works out of the box - no API key needed
+3. For custom integrations, contact support for API access
 
 ---
 
@@ -485,9 +485,9 @@ API responses cached for 5 minutes. Use `Cache-Control: no-cache` header to bypa
 
 ## Support
 
-- **Documentation**: [Protocol Memory Docs](https://github.com/phillipclapham/protocol-memory)
-- **Issues**: [GitHub Issues](https://github.com/phillipclapham/protocol-memory/issues)
-- **Library Hosting**: [LIBRARY_HOSTING.md](LIBRARY_HOSTING.md)
+- **Documentation**: [Integration Guide](https://github.com/phillipclapham/protocol-memory-integration/blob/main/README.md)
+- **Issues**: [GitHub Issues](https://github.com/phillipclapham/protocol-memory-integration/issues)
+- **Library Hosting**: [LIBRARY_HOSTING.md](https://github.com/phillipclapham/protocol-memory-integration/blob/main/LIBRARY_HOSTING.md)
 
 ---
 
@@ -497,7 +497,7 @@ MIT License - Free to use in personal and commercial projects.
 
 ---
 
-**Powered by [Protocol Memory](https://protocol-memory.pages.dev)** - The missing layer between humans and AI.
+**Powered by [Protocol Memory](https://protocolmemory.com)** - The missing layer between humans and AI.
 
 **Version**: 1.0.0
 **Last Updated**: October 17, 2025
