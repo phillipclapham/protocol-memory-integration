@@ -75,10 +75,12 @@ protocol.init();
 
 **Options**:
 - `apiUrl` - API endpoint (default: Protocol Memory production URL)
-- `anonKey` - Supabase anon key for authentication (default: Protocol Memory production key)
+- `anonKey` - Supabase anon key for authentication (default: built-in Protocol Memory key, see [API Reference](#api-reference))
 - `refreshInterval` - Auto-refresh interval in milliseconds (default: 5 min)
 - `debug` - Enable console logging (default: false)
 - `autoRefresh` - Enable automatic refresh (default: true)
+
+**Note**: The JavaScript library includes the API key by default. You only need to provide `anonKey` if using a custom Supabase project.
 
 ---
 
@@ -120,11 +122,11 @@ GET https://urfuxifxphtqsrkuoifn.supabase.co/functions/v1/public-profile/{userna
 ### Headers
 
 ```
-Authorization: Bearer YOUR_SUPABASE_ANON_KEY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyZnV4aWZ4cGh0cXNya3VvaWZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwNTY5NzUsImV4cCI6MjA3MzYzMjk3NX0.i_OioOUbgn6BN-38-ps26siSY4_iRH6Ac3boAHywPng
 Content-Type: application/json
 ```
 
-**Get your key**: The library uses Protocol Memory's public API with a built-in key. For custom integrations, you'll need your own Supabase project or contact support.
+**API Key**: Use the Protocol Memory public API key shown above. You can also find this in the web app at **Settings → API** (coming soon).
 
 ### Response
 
@@ -190,7 +192,7 @@ async function fetchProfile(username) {
     `https://urfuxifxphtqsrkuoifn.supabase.co/functions/v1/public-profile/${username}`,
     {
       headers: {
-        'Authorization': 'Bearer YOUR_SUPABASE_ANON_KEY',
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyZnV4aWZ4cGh0cXNya3VvaWZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwNTY5NzUsImV4cCI6MjA3MzYzMjk3NX0.i_OioOUbgn6BN-38-ps26siSY4_iRH6Ac3boAHywPng',
         'Content-Type': 'application/json'
       }
     }
@@ -218,7 +220,7 @@ import requests
 def fetch_profile(username):
     url = f'https://urfuxifxphtqsrkuoifn.supabase.co/functions/v1/public-profile/{username}'
     headers = {
-        'Authorization': 'Bearer YOUR_SUPABASE_ANON_KEY',
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyZnV4aWZ4cGh0cXNya3VvaWZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwNTY5NzUsImV4cCI6MjA3MzYzMjk3NX0.i_OioOUbgn6BN-38-ps26siSY4_iRH6Ac3boAHywPng',
         'Content-Type': 'application/json'
     }
 
@@ -270,7 +272,7 @@ function fetchProfile($username) {
 
     $options = [
         'http' => [
-            'header' => "Authorization: Bearer YOUR_SUPABASE_ANON_KEY\r\n" .
+            'header' => "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyZnV4aWZ4cGh0cXNya3VvaWZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwNTY5NzUsImV4cCI6MjA3MzYzMjk3NX0.i_OioOUbgn6BN-38-ps26siSY4_iRH6Ac3boAHywPng\r\n" .
                        "Content-Type: application/json\r\n"
         ]
     ];
@@ -292,7 +294,7 @@ $profile = fetchProfile('phill');
 ### cURL
 
 ```bash
-curl -H "Authorization: Bearer YOUR_SUPABASE_ANON_KEY" \
+curl -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyZnV4aWZ4cGh0cXNya3VvaWZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwNTY5NzUsImV4cCI6MjA3MzYzMjk3NX0.i_OioOUbgn6BN-38-ps26siSY4_iRH6Ac3boAHywPng" \
      -H "Content-Type: application/json" \
      https://urfuxifxphtqsrkuoifn.supabase.co/functions/v1/public-profile/phill
 ```
@@ -309,7 +311,7 @@ async function fetchProfile(username) {
     `https://urfuxifxphtqsrkuoifn.supabase.co/functions/v1/public-profile/${username}`,
     {
       headers: {
-        'Authorization': 'Bearer YOUR_SUPABASE_ANON_KEY',
+        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyZnV4aWZ4cGh0cXNya3VvaWZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwNTY5NzUsImV4cCI6MjA3MzYzMjk3NX0.i_OioOUbgn6BN-38-ps26siSY4_iRH6Ac3boAHywPng',
         'Content-Type': 'application/json'
       }
     }
@@ -360,7 +362,7 @@ func fetchProfile(username string) (*Profile, error) {
         return nil, err
     }
 
-    req.Header.Set("Authorization", "Bearer YOUR_SUPABASE_ANON_KEY")
+    req.Header.Set("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVyZnV4aWZ4cGh0cXNya3VvaWZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgwNTY5NzUsImV4cCI6MjA3MzYzMjk3NX0.i_OioOUbgn6BN-38-ps26siSY4_iRH6Ac3boAHywPng")
     req.Header.Set("Content-Type", "application/json")
 
     client := &http.Client{}
@@ -421,9 +423,9 @@ API responses cached for 5 minutes. Use `Cache-Control: no-cache` header to bypa
 **Problem**: Missing or invalid API key
 
 **Solution**:
-1. Sign up at [Protocol Memory](https://protocolmemory.com)
-2. The JavaScript library works out of the box - no API key needed
-3. For custom integrations, contact support for API access
+1. Use the Protocol Memory public API key (see [API Reference](#api-reference) section above)
+2. Include in `Authorization: Bearer YOUR_KEY` header
+3. Web app users can find this at **Settings → API** (coming soon)
 
 ---
 
