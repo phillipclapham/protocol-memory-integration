@@ -243,12 +243,20 @@ class ProtocolIntegration {
 
     if (avatarUrl) {
       // Use pre-computed avatar URL from server (preferred)
-      avatarHTML = `<div class="profile-avatar" style="background-image: url('${avatarUrl}')"></div>`;
+      avatarHTML = `
+        <div class="profile-avatar-container">
+          <div class="profile-avatar" style="background-image: url('${avatarUrl}')"></div>
+        </div>
+      `;
     } else if (email) {
       // Fallback: Generate avatar URL client-side using Gravatar
       const generatedUrl = await GravatarHelper.getAvatarUrl(email, 256, 'identicon');
       if (generatedUrl) {
-        avatarHTML = `<div class="profile-avatar" style="background-image: url('${generatedUrl}')"></div>`;
+        avatarHTML = `
+          <div class="profile-avatar-container">
+            <div class="profile-avatar" style="background-image: url('${generatedUrl}')"></div>
+          </div>
+        `;
       }
     }
 
