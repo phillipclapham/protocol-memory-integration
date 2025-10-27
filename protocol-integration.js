@@ -283,16 +283,15 @@ class ProtocolIntegration {
     // Priority order for sorting
     const priorityOrder = { urgent: 0, high: 1, normal: 2, low: 3 };
 
-    // Show top 5 seeds by priority
-    const topSeeds = seeds
+    // Sort seeds by priority (no artificial limit - user freedom over nannying)
+    const sortedSeeds = seeds
       .sort((a, b) => {
         return (priorityOrder[a.priority] || 3) - (priorityOrder[b.priority] || 3);
-      })
-      .slice(0, 5);
+      });
 
     projectsEl.innerHTML = `
       <ul class="pm-projects-list">
-        ${topSeeds.map((seed, index) => `
+        ${sortedSeeds.map((seed, index) => `
           <li class="pm-project-item" data-seed-index="${index}">
             <button class="pm-maximize-icon" data-modal-seed="${index}" aria-label="Open in modal">⤢</button>
             <div class="pm-project-header">
@@ -318,7 +317,7 @@ class ProtocolIntegration {
     `;
 
     // Store seeds data for modal
-    this.cachedSeeds = topSeeds;
+    this.cachedSeeds = sortedSeeds;
     // Attach modal handlers for seeds
     this.attachModalHandlers('seed');
   }
