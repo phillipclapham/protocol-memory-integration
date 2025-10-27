@@ -9,72 +9,76 @@
 
 :root {
   /* Colors - Deep Teal Palette (Protocol Memory brand) */
-  --color-primary: #0F766E; /* Deep teal */
-  --color-primary-light: #14B8A6; /* Teal */
-  --color-primary-dark: #134E4A; /* Darker teal */
+  --color-primary: #0f766e; /* Deep teal */
+  --color-primary-light: #14b8a6; /* Teal */
+  --color-primary-dark: #134e4a; /* Darker teal */
 
   /* Neutrals */
-  --color-bg: #FFFFFF;
-  --color-bg-secondary: #F9FAFB;
-  --color-bg-tertiary: #F3F4F6;
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f9fafb;
+  --color-bg-tertiary: #f3f4f6;
   --color-text: #111827;
-  --color-text-secondary: #6B7280;
-  --color-text-tertiary: #9CA3AF;
-  --color-border: #E5E7EB;
+  --color-text-secondary: #6b7280;
+  --color-text-tertiary: #9ca3af;
+  --color-border: #e5e7eb;
 
   /* Semantic Colors */
-  --color-success: #10B981;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
 
   /* Priority Badge Colors */
-  --color-urgent: #EF4444;
-  --color-high: #F59E0B;
-  --color-normal: #3B82F6;
-  --color-low: #6B7280;
+  --color-urgent: #ef4444;
+  --color-high: #f59e0b;
+  --color-normal: #3b82f6;
+  --color-low: #6b7280;
 
   /* Typography */
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas,
+    monospace;
 
   /* Font Sizes */
-  --text-xs: 0.75rem;     /* 12px */
-  --text-sm: 0.875rem;    /* 14px */
-  --text-base: 1rem;      /* 16px */
-  --text-lg: 1.125rem;    /* 18px */
-  --text-xl: 1.25rem;     /* 20px */
-  --text-2xl: 1.5rem;     /* 24px */
-  --text-3xl: 1.875rem;   /* 30px */
-  --text-4xl: 2.25rem;    /* 36px */
-  --text-5xl: 3rem;       /* 48px */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+  --text-5xl: 3rem; /* 48px */
 
   /* Spacing */
-  --space-1: 0.25rem;   /* 4px */
-  --space-2: 0.5rem;    /* 8px */
-  --space-3: 0.75rem;   /* 12px */
-  --space-4: 1rem;      /* 16px */
-  --space-5: 1.25rem;   /* 20px */
-  --space-6: 1.5rem;    /* 24px */
-  --space-8: 2rem;      /* 32px */
-  --space-10: 2.5rem;   /* 40px */
-  --space-12: 3rem;     /* 48px */
-  --space-16: 4rem;     /* 64px */
-  --space-20: 5rem;     /* 80px */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
 
   /* Border Radius */
-  --radius-sm: 0.25rem;   /* 4px */
-  --radius-md: 0.375rem;  /* 6px */
-  --radius-lg: 0.5rem;    /* 8px */
-  --radius-xl: 0.75rem;   /* 12px */
-  --radius-2xl: 1rem;     /* 16px */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.375rem; /* 6px */
+  --radius-lg: 0.5rem; /* 8px */
+  --radius-xl: 0.75rem; /* 12px */
+  --radius-2xl: 1rem; /* 16px */
   --radius-full: 9999px;
 
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -89,6 +93,24 @@
   --z-modal: 1040;
   --z-popover: 1050;
   --z-tooltip: 1060;
+
+  /* Cognitive Pulse Colors - Light Mode (Desktop: Subtle black/gray) */
+  --pulse-teal: rgba(60, 60, 60, 0.1);
+  --pulse-purple: rgba(50, 50, 50, 0.075);
+  --pulse-pink: rgba(40, 40, 40, 0.07);
+
+  /* Chromatic Spectrum - Full Rainbow (Used in dark mode + mobile light mode) */
+  --spectrum-crimson: rgba(220, 38, 38, 0.3);      /* Ring 0: Red/Crimson - Hot core */
+  --spectrum-orange: rgba(249, 115, 22, 0.28);     /* Ring 1: Orange - Warm expansion */
+  --spectrum-gold: rgba(245, 158, 11, 0.28);       /* Ring 2: Yellow/Gold - Bright middle */
+  --spectrum-lime: rgba(132, 204, 22, 0.26);       /* Ring 3: Lime/Chartreuse - Fresh energy */
+  --spectrum-cyan: rgba(6, 182, 212, 0.26);        /* Ring 4: Cyan/Teal - Cool transition */
+  --spectrum-sky: rgba(14, 165, 233, 0.24);        /* Ring 5: Sky Blue - Atmospheric */
+  --spectrum-indigo: rgba(79, 70, 229, 0.24);      /* Ring 6: Indigo - Deep space */
+  --spectrum-purple: rgba(147, 51, 234, 0.22);     /* Ring 7: Purple/Violet - Mysterious */
+  --spectrum-magenta: rgba(236, 72, 153, 0.22);    /* Ring 8: Magenta/Hot Pink - Vibrant outer */
+  --spectrum-pink: rgba(244, 114, 182, 0.2);       /* Ring 9: Pink/Rose - Soft perimeter */
+  --spectrum-lavender: rgba(196, 181, 253, 0.18);  /* Ring 10: Lavender - Gentle fade */
 }
 
 /* ========================================
@@ -101,12 +123,14 @@
   box-sizing: border-box;
 }
 
+/* Smooth theme transitions */
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   scroll-padding-top: 60px; /* Accounts for sticky nav height */
+  transition: background-color 200ms ease, color 200ms ease;
 }
 
 body {
@@ -115,6 +139,231 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
+  transition: background-color 200ms ease, color 200ms ease;
+  position: relative;
+}
+
+/* ========================================
+   BACKGROUND - Multi-colored Neural Map + Noise Glitch (Thematic Restraint)
+   ======================================== */
+
+/* Light mode: Sparse multi-colored neural network - Protocol Memory substrate */
+.orb-field {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background: #fafafa;
+  transition: background 0.8s ease-in-out;
+}
+
+/* Dark mode: Balanced gradient (split between subtle and vibrant) */
+[data-theme="dark"] .orb-field {
+  background: linear-gradient(160deg,
+    rgb(12, 32, 36) 0%,     /* Balanced teal-black */
+    rgb(29, 15, 42) 40%,    /* Balanced purple-black */
+    rgb(38, 13, 30) 70%,    /* Balanced magenta-black */
+    rgb(13, 35, 25) 100%    /* Balanced green-black */
+  );
+}
+
+/* Dark mode: Noise displacement glitch overlay (organic warping) */
+[data-theme="dark"] .orb-field::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="displace"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"/></filter><rect width="100%" height="100%" filter="url(%23displace)" fill="rgba(255,255,255,0.03)"/></svg>');
+  background-size: 400px 400px;
+  background-repeat: repeat;
+  mix-blend-mode: overlay;
+  opacity: 1;
+  filter: none;
+  pointer-events: none;
+}
+
+/* Founder mode (light): Warm spectrum hint - consciousness substrate */
+[data-mode="founder"]:not([data-theme="dark"]) .orb-field {
+  background: linear-gradient(180deg,
+    #fdfbff 0%,   /* Whisper of purple-white */
+    #fffcf9 100%  /* Whisper of orange-warm */
+  );
+}
+
+
+/* ========================================
+   FOUNDER MODE - Neural Pulse Transformation
+   ======================================== */
+
+/* Founder Mode: Light desktop neural pulse bars switch to spectrum gradient bars */
+[data-mode="founder"]:not([data-theme="dark"]) .pulse-ring-0 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 90deg,
+    var(--spectrum-crimson) 90deg,
+    var(--spectrum-orange) 180deg,
+    var(--spectrum-gold) 270deg,
+    transparent 270deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 85px, black 85px, black 140px, transparent 140px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 85px, black 85px, black 140px, transparent 140px);
+  opacity: 0.95;
+}
+
+[data-mode="founder"]:not([data-theme="dark"]) .pulse-ring-1 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    var(--spectrum-gold) 0deg,
+    var(--spectrum-lime) 90deg,
+    var(--spectrum-cyan) 180deg,
+    transparent 180deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 190px, black 190px, black 250px, transparent 250px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 190px, black 190px, black 250px, transparent 250px);
+  opacity: 0.9;
+}
+
+[data-mode="founder"]:not([data-theme="dark"]) .pulse-ring-2 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 90deg,
+    var(--spectrum-cyan) 90deg,
+    var(--spectrum-sky) 180deg,
+    var(--spectrum-indigo) 270deg,
+    transparent 270deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 250px, black 250px, black 300px, transparent 300px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 250px, black 250px, black 300px, transparent 300px);
+  opacity: 0.88;
+}
+
+[data-mode="founder"]:not([data-theme="dark"]) .pulse-ring-3 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 180deg,
+    var(--spectrum-lime) 180deg,
+    var(--spectrum-cyan) 270deg,
+    var(--spectrum-sky) 360deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 130px, black 130px, black 200px, transparent 200px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 130px, black 130px, black 200px, transparent 200px);
+  opacity: 0.85;
+}
+
+[data-mode="founder"]:not([data-theme="dark"]) .pulse-ring-4 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    var(--spectrum-indigo) 0deg,
+    var(--spectrum-purple) 90deg,
+    var(--spectrum-magenta) 180deg,
+    transparent 180deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 312px, black 312px, black 360px, transparent 360px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 312px, black 312px, black 360px, transparent 360px);
+  opacity: 0.82;
+}
+
+[data-mode="founder"]:not([data-theme="dark"]) .pulse-ring-5 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 90deg,
+    var(--spectrum-sky) 90deg,
+    var(--spectrum-indigo) 180deg,
+    var(--spectrum-purple) 270deg,
+    transparent 270deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 382px, black 382px, black 440px, transparent 440px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 382px, black 382px, black 440px, transparent 440px);
+  opacity: 0.78;
+}
+
+[data-mode="founder"]:not([data-theme="dark"]) .pulse-ring-6 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 180deg,
+    var(--spectrum-magenta) 180deg,
+    var(--spectrum-pink) 270deg,
+    var(--spectrum-lavender) 360deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 468px, black 468px, black 520px, transparent 520px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 468px, black 468px, black 520px, transparent 520px);
+  opacity: 0.75;
+}
+
+[data-mode="founder"]:not([data-theme="dark"]) .pulse-ring-7 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    var(--spectrum-purple) 0deg,
+    var(--spectrum-magenta) 90deg,
+    var(--spectrum-pink) 180deg,
+    transparent 180deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 554px, black 554px, black 600px, transparent 600px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 554px, black 554px, black 600px, transparent 600px);
+  opacity: 0.72;
+}
+
+[data-mode="founder"]:not([data-theme="dark"]) .pulse-ring-8 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 90deg,
+    var(--spectrum-pink) 90deg,
+    var(--spectrum-lavender) 180deg,
+    var(--spectrum-crimson) 270deg,
+    transparent 270deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 640px, black 640px, black 690px, transparent 690px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 640px, black 640px, black 690px, transparent 690px);
+  opacity: 0.68;
+}
+
+[data-mode="founder"]:not([data-theme="dark"]) .pulse-ring-9 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 180deg,
+    var(--spectrum-orange) 180deg,
+    var(--spectrum-gold) 270deg,
+    var(--spectrum-lime) 360deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 736px, black 736px, black 780px, transparent 780px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 736px, black 736px, black 780px, transparent 780px);
+  opacity: 0.65;
+}
+
+[data-mode="founder"]:not([data-theme="dark"]) .pulse-ring-10 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    var(--spectrum-lavender) 0deg,
+    var(--spectrum-crimson) 90deg,
+    var(--spectrum-orange) 180deg,
+    transparent 180deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 846px, black 846px, black 870px, transparent 870px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 846px, black 846px, black 870px, transparent 870px);
+  opacity: 0.6;
 }
 
 /* ========================================
@@ -143,9 +392,18 @@ body {
    ======================================== */
 
 .site-header {
-  padding: var(--space-20) 0;
+  position: relative; /* Required for absolute positioning */
+  overflow: hidden; /* Keeps rings contained */
+  min-height: 600px; /* Maintain prominence even without avatar */
+  display: flex;
+  align-items: center; /* Vertically center content */
+  padding: var(--space-24) 0 var(--space-20) 0; /* Extra padding for animation */
   border-bottom: 1px solid var(--color-border);
-  background: linear-gradient(to bottom, var(--color-bg), var(--color-bg-secondary));
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg),
+    var(--color-bg-secondary)
+  );
 }
 
 .header-content {
@@ -154,17 +412,18 @@ body {
 }
 
 .site-title {
+  font-family: "Michroma", sans-serif;
   font-size: var(--text-5xl);
-  font-weight: 700;
+  font-weight: 600; /* Boosted to stand out against orbs */
   color: var(--color-text);
   margin-bottom: var(--space-3);
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em; /* Slightly wider for technical feel */
 }
 
 .site-subtitle {
   font-size: var(--text-xl);
   color: var(--color-text-secondary);
-  font-weight: 400;
+  font-weight: 500; /* Boosted for better visibility */
   max-width: 600px;
   margin: 0 auto;
 }
@@ -175,6 +434,8 @@ body {
   justify-content: center;
   gap: var(--space-6);
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }
 
 .social-links a {
@@ -184,7 +445,7 @@ body {
   color: var(--color-text-secondary);
   text-decoration: none;
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 600; /* Boosted for better visibility */
   padding: var(--space-3) var(--space-4);
   border-radius: var(--radius-lg);
   transition: all var(--transition-base);
@@ -201,10 +462,53 @@ body {
   flex-shrink: 0; /* Prevent icon from being squished */
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-tertiary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2) var(--space-3);
+  font-size: 18px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  min-width: 44px; /* Touch target accessibility */
+  min-height: 44px;
+  flex-shrink: 0; /* Prevent squishing in flex container */
+}
+
+.theme-toggle:hover {
+  background: var(--color-bg-secondary);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.theme-toggle:active {
+  transform: translateY(0);
+}
+
+.theme-icon {
+  display: block;
+  line-height: 1;
+}
+
 /* Mobile Header */
 @media (max-width: 768px) {
   .site-header {
-    padding: var(--space-12) 0;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    padding: var(--space-16) 0 var(--space-12) 0;
+  }
+
+  .theme-toggle {
+    padding: var(--space-2) var(--space-3);
+    font-size: 18px;
+    min-width: 40px;
+    min-height: 40px;
   }
 
   .site-title {
@@ -226,6 +530,574 @@ body {
 }
 
 /* ========================================
+   NEURAL PULSE ANIMATION
+   ======================================== */
+
+/* Pulse container - sits behind everything */
+.cognitive-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1;
+}
+
+/* Individual pulse rings */
+.pulse-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border-style: solid;
+  transform-origin: center center;
+  mix-blend-mode: screen;
+}
+
+/* Ring 0: Pink Core - Brightest center, counter-clockwise */
+.pulse-ring-0 {
+  width: 280px;
+  height: 280px;
+  margin: -140px 0 0 -140px;
+  border-width: 55px;
+  border-color: transparent transparent transparent var(--pulse-pink);
+  animation: rotate-ccw 22s linear infinite,
+    pulse-breathe-0 16s ease-in-out infinite;
+  filter: blur(6px);
+}
+
+/* Ring 1: Teal - Slow clockwise */
+.pulse-ring-1 {
+  width: 500px;
+  height: 500px;
+  margin: -250px 0 0 -250px;
+  border-width: 60px;
+  border-color: transparent var(--pulse-teal) transparent transparent;
+  animation: rotate-cw 15s linear infinite,
+    pulse-breathe-1 10s ease-in-out infinite;
+  filter: blur(8px);
+}
+
+/* Ring 2: Purple - Slow counter-clockwise */
+.pulse-ring-2 {
+  width: 600px;
+  height: 600px;
+  margin: -300px 0 0 -300px;
+  border-width: 50px;
+  border-color: var(--pulse-purple) transparent transparent transparent;
+  animation: rotate-ccw 18s linear infinite,
+    pulse-breathe-2 12s ease-in-out infinite;
+  filter: blur(10px);
+}
+
+/* Ring 3: Pink - Clockwise, offset phase */
+.pulse-ring-3 {
+  width: 400px;
+  height: 400px;
+  margin: -200px 0 0 -200px;
+  border-width: 70px;
+  border-color: transparent transparent var(--pulse-pink) transparent;
+  animation: rotate-cw 20s linear infinite,
+    pulse-breathe-3 14s ease-in-out infinite;
+  filter: blur(12px);
+  animation-delay: -5s;
+}
+
+/* Ring 4: Teal Outer - Counter-clockwise, first outer expansion */
+.pulse-ring-4 {
+  width: 720px;
+  height: 720px;
+  margin: -360px 0 0 -360px;
+  border-width: 48px;
+  border-color: var(--pulse-teal) transparent transparent transparent;
+  animation: rotate-ccw 16s linear infinite,
+    pulse-breathe-4 13s ease-in-out infinite;
+  filter: blur(14px);
+  animation-delay: -2s;
+}
+
+/* Ring 5: Purple Outer - Clockwise, second outer expansion */
+.pulse-ring-5 {
+  width: 880px;
+  height: 880px;
+  margin: -440px 0 0 -440px;
+  border-width: 58px;
+  border-color: transparent var(--pulse-purple) transparent transparent;
+  animation: rotate-cw 25s linear infinite,
+    pulse-breathe-5 17s ease-in-out infinite;
+  filter: blur(16px);
+  animation-delay: -7s;
+}
+
+/* Ring 6: Pink Outer - Counter-clockwise, maximum perimeter */
+.pulse-ring-6 {
+  width: 1040px;
+  height: 1040px;
+  margin: -520px 0 0 -520px;
+  border-width: 52px;
+  border-color: transparent transparent transparent var(--pulse-pink);
+  animation: rotate-ccw 28s linear infinite,
+    pulse-breathe-6 19s ease-in-out infinite;
+  filter: blur(18px);
+  animation-delay: -10s;
+}
+
+/* Ring 7: Teal Far Outer - STATIC (performance optimization) */
+.pulse-ring-7 {
+  width: 1200px;
+  height: 1200px;
+  margin: -600px 0 0 -600px;
+  border-width: 46px;
+  border-color: var(--pulse-teal) transparent transparent transparent;
+  animation: pulse-breathe-7 21s ease-in-out infinite; /* Breathe only, no rotation */
+  filter: blur(20px);
+  animation-delay: -3s;
+  opacity: 0.7; /* Slightly reduced as static ambient glow */
+}
+
+/* Ring 8: Purple Far Outer - STATIC (performance optimization) */
+.pulse-ring-8 {
+  width: 1380px;
+  height: 1380px;
+  margin: -690px 0 0 -690px;
+  border-width: 50px;
+  border-color: transparent var(--pulse-purple) transparent transparent;
+  animation: pulse-breathe-8 23s ease-in-out infinite; /* Breathe only, no rotation */
+  filter: blur(22px);
+  animation-delay: -12s;
+  opacity: 0.65; /* Slightly reduced as static ambient glow */
+}
+
+/* Ring 9: Pink Near Perimeter - STATIC (performance optimization) */
+.pulse-ring-9 {
+  width: 1560px;
+  height: 1560px;
+  margin: -780px 0 0 -780px;
+  border-width: 44px;
+  border-color: transparent transparent var(--pulse-pink) transparent;
+  animation: pulse-breathe-9 25s ease-in-out infinite; /* Breathe only, no rotation */
+  filter: blur(24px);
+  animation-delay: -8s;
+  opacity: 0.6; /* Slightly reduced as static ambient glow */
+}
+
+/* Ring 10: Teal Maximum Fill - STATIC (performance optimization) */
+.pulse-ring-10 {
+  width: 1740px;
+  height: 1740px;
+  margin: -870px 0 0 -870px;
+  border-width: 48px;
+  border-color: transparent transparent transparent var(--pulse-teal);
+  animation: pulse-breathe-10 27s ease-in-out infinite; /* Breathe only, no rotation */
+  filter: blur(26px);
+  animation-delay: -15s;
+  opacity: 0.55; /* Slightly reduced as static ambient glow */
+}
+
+/* Rotation keyframes */
+@keyframes rotate-cw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-ccw {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Breathing/pulsing keyframes */
+
+/* Ring 0: Bright core with strong pulse */
+@keyframes pulse-breathe-0 {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+    opacity: 0.95;
+  }
+}
+
+@keyframes pulse-breathe-1 {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.15);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-breathe-2 {
+  0%,
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: rotate(180deg) scale(0.95);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-breathe-3 {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Ring 4: First outer expansion - gentle breathe */
+@keyframes pulse-breathe-4 {
+  0%,
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.75;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.08);
+    opacity: 0.9;
+  }
+}
+
+/* Ring 5: Second outer expansion - subtle breathe */
+@keyframes pulse-breathe-5 {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+/* Ring 6: Maximum perimeter - very subtle breathe */
+@keyframes pulse-breathe-6 {
+  0%,
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.65;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.03);
+    opacity: 0.8;
+  }
+}
+
+/* Ring 7: Far outer - gentle fade breathe */
+@keyframes pulse-breathe-7 {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.02);
+    opacity: 0.75;
+  }
+}
+
+/* Ring 8: Further outer - soft breathe */
+@keyframes pulse-breathe-8 {
+  0%,
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.015);
+    opacity: 0.7;
+  }
+}
+
+/* Ring 9: Near perimeter - subtle fade */
+@keyframes pulse-breathe-9 {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.01);
+    opacity: 0.65;
+  }
+}
+
+/* Ring 10: Maximum fill - whisper breathe */
+@keyframes pulse-breathe-10 {
+  0%,
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.005);
+    opacity: 0.6;
+  }
+}
+
+/* ========================================
+   SPECTRUM CORE - Neural Origin Point
+   ======================================== */
+
+/* The heart/anchor of the neural pulse - Light mode: subtle gray, Dark mode: spectrum colors */
+.spectrum-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90px;
+  height: 90px;
+  margin: -45px 0 0 -45px;
+  border-radius: 50%;
+  /* Light mode desktop: Subtle gray to match bars */
+  background: radial-gradient(
+    circle at center,
+    rgba(50, 50, 50, 0.15) 0%,
+    rgba(50, 50, 50, 0.15) 50%,
+    transparent 100%
+  );
+  filter: blur(10px);
+  animation: core-pulse 10s ease-in-out infinite; /* No color cycling in light mode */
+  z-index: 10; /* Above rings */
+  pointer-events: none;
+}
+
+/* Spectrum color cycling animation - flows through all 11 colors */
+@keyframes spectrum-cycle {
+  0% { background: radial-gradient(circle, var(--spectrum-crimson) 0%, var(--spectrum-crimson) 50%, transparent 100%); }
+  9% { background: radial-gradient(circle, var(--spectrum-orange) 0%, var(--spectrum-orange) 50%, transparent 100%); }
+  18% { background: radial-gradient(circle, var(--spectrum-gold) 0%, var(--spectrum-gold) 50%, transparent 100%); }
+  27% { background: radial-gradient(circle, var(--spectrum-lime) 0%, var(--spectrum-lime) 50%, transparent 100%); }
+  36% { background: radial-gradient(circle, var(--spectrum-cyan) 0%, var(--spectrum-cyan) 50%, transparent 100%); }
+  45% { background: radial-gradient(circle, var(--spectrum-sky) 0%, var(--spectrum-sky) 50%, transparent 100%); }
+  54% { background: radial-gradient(circle, var(--spectrum-indigo) 0%, var(--spectrum-indigo) 50%, transparent 100%); }
+  63% { background: radial-gradient(circle, var(--spectrum-purple) 0%, var(--spectrum-purple) 50%, transparent 100%); }
+  72% { background: radial-gradient(circle, var(--spectrum-magenta) 0%, var(--spectrum-magenta) 50%, transparent 100%); }
+  81% { background: radial-gradient(circle, var(--spectrum-pink) 0%, var(--spectrum-pink) 50%, transparent 100%); }
+  90% { background: radial-gradient(circle, var(--spectrum-lavender) 0%, var(--spectrum-lavender) 50%, transparent 100%); }
+  100% { background: radial-gradient(circle, var(--spectrum-crimson) 0%, var(--spectrum-crimson) 50%, transparent 100%); }
+}
+
+/* Gentle pulse/breathe animation */
+@keyframes core-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.95;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+/* Dark mode: Boost core visibility and intensity with spectrum colors */
+[data-theme="dark"] .spectrum-core {
+  background: radial-gradient(
+    circle at center,
+    var(--spectrum-crimson) 0%,
+    var(--spectrum-crimson) 50%,
+    transparent 100%
+  );
+  opacity: 1;
+  filter: blur(14px);
+  animation: spectrum-cycle 33s linear infinite, core-pulse 10s ease-in-out infinite;
+}
+
+/* Mobile: Smaller but still prominent with spectrum colors */
+@media (max-width: 768px) {
+  .spectrum-core {
+    width: 55px;
+    height: 55px;
+    margin: -27.5px 0 0 -27.5px;
+    filter: blur(6px);
+    opacity: 0.85;
+    /* Mobile light mode gets colorful spectrum like dark mode */
+    background: radial-gradient(
+      circle at center,
+      var(--spectrum-crimson) 0%,
+      var(--spectrum-crimson) 50%,
+      transparent 100%
+    );
+    animation: spectrum-cycle 33s linear infinite, core-pulse 10s ease-in-out infinite;
+  }
+}
+
+/* Reduced motion: Static core, subtle (respects accessibility preference) */
+@media (prefers-reduced-motion: reduce) {
+  .spectrum-core {
+    animation: none;
+    background: radial-gradient(circle, rgba(50, 50, 50, 0.12) 0%, rgba(50, 50, 50, 0.12) 50%, transparent 100%);
+    opacity: 0.7;
+  }
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  /* Hide largest rings on mobile to prevent clipping (show only rings 0-4) */
+  .pulse-ring-5,
+  .pulse-ring-6,
+  .pulse-ring-7,
+  .pulse-ring-8,
+  .pulse-ring-9,
+  .pulse-ring-10 {
+    display: none;
+  }
+
+  /* Reduce cognitive pulse opacity for subtlety */
+  .cognitive-pulse {
+    opacity: 0.5;
+  }
+
+  /* Default: Static rings on mobile (better performance) */
+  .pulse-ring {
+    animation: none !important;
+    opacity: 0.4;
+  }
+
+  /* Only animate if user explicitly allows motion */
+  @media (prefers-reduced-motion: no-preference) {
+    .pulse-ring {
+      animation: rotate-cw 25s linear infinite,
+        pulse-breathe-1 20s ease-in-out infinite !important;
+      opacity: 0.5;
+    }
+
+    /* Restore original animations for each ring */
+    .pulse-ring-0 {
+      animation: rotate-ccw 28s linear infinite,
+        pulse-breathe-0 22s ease-in-out infinite !important;
+    }
+
+    .pulse-ring-1 {
+      animation: rotate-cw 20s linear infinite,
+        pulse-breathe-1 15s ease-in-out infinite !important;
+    }
+
+    .pulse-ring-2 {
+      animation: rotate-ccw 24s linear infinite,
+        pulse-breathe-2 18s ease-in-out infinite !important;
+    }
+
+    .pulse-ring-3 {
+      animation: rotate-cw 26s linear infinite,
+        pulse-breathe-3 20s ease-in-out infinite !important;
+    }
+
+    .pulse-ring-4 {
+      animation: rotate-ccw 22s linear infinite,
+        pulse-breathe-4 19s ease-in-out infinite !important;
+    }
+  }
+
+  /* MOBILE LIGHT MODE: Vibrant GRADIENT BARS (unique feature!) */
+  /* Desktop light = subtle gray, Mobile light = vibrant multi-color gradient bars */
+
+  html:not([data-theme="dark"]) .pulse-ring-0 {
+    border: none;
+    background: conic-gradient(
+      from 0deg,
+      transparent 0deg,
+      transparent 90deg,
+      var(--spectrum-crimson) 90deg,
+      var(--spectrum-orange) 180deg,
+      var(--spectrum-gold) 270deg,
+      transparent 270deg
+    );
+    -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 85px, black 85px, black 140px, transparent 140px);
+    mask-image: radial-gradient(circle at center, transparent 0, transparent 85px, black 85px, black 140px, transparent 140px);
+    opacity: 0.5;
+  }
+
+  html:not([data-theme="dark"]) .pulse-ring-1 {
+    border: none;
+    background: conic-gradient(
+      from 0deg,
+      var(--spectrum-gold) 0deg,
+      var(--spectrum-lime) 90deg,
+      var(--spectrum-cyan) 180deg,
+      transparent 180deg
+    );
+    -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 190px, black 190px, black 250px, transparent 250px);
+    mask-image: radial-gradient(circle at center, transparent 0, transparent 190px, black 190px, black 250px, transparent 250px);
+    opacity: 0.48;
+  }
+
+  html:not([data-theme="dark"]) .pulse-ring-2 {
+    border: none;
+    background: conic-gradient(
+      from 0deg,
+      transparent 0deg,
+      transparent 90deg,
+      var(--spectrum-cyan) 90deg,
+      var(--spectrum-sky) 180deg,
+      var(--spectrum-indigo) 270deg,
+      transparent 270deg
+    );
+    -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 250px, black 250px, black 300px, transparent 300px);
+    mask-image: radial-gradient(circle at center, transparent 0, transparent 250px, black 250px, black 300px, transparent 300px);
+    opacity: 0.46;
+  }
+
+  html:not([data-theme="dark"]) .pulse-ring-3 {
+    border: none;
+    background: conic-gradient(
+      from 0deg,
+      transparent 0deg,
+      transparent 180deg,
+      var(--spectrum-lime) 180deg,
+      var(--spectrum-cyan) 270deg,
+      var(--spectrum-sky) 360deg
+    );
+    -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 130px, black 130px, black 200px, transparent 200px);
+    mask-image: radial-gradient(circle at center, transparent 0, transparent 130px, black 130px, black 200px, transparent 200px);
+    opacity: 0.44;
+  }
+
+  html:not([data-theme="dark"]) .pulse-ring-4 {
+    border: none;
+    background: conic-gradient(
+      from 0deg,
+      var(--spectrum-indigo) 0deg,
+      var(--spectrum-purple) 90deg,
+      var(--spectrum-magenta) 180deg,
+      transparent 180deg
+    );
+    -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 312px, black 312px, black 360px, transparent 360px);
+    mask-image: radial-gradient(circle at center, transparent 0, transparent 312px, black 312px, black 360px, transparent 360px);
+    opacity: 0.42;
+  }
+}
+
+/* Accessibility: Respect reduced motion globally */
+@media (prefers-reduced-motion: reduce) {
+  .pulse-ring {
+    animation: none !important;
+    opacity: 0.3;
+  }
+}
+
+/* ========================================
    SECONDARY NAVIGATION (STICKY)
    ======================================== */
 
@@ -241,6 +1113,10 @@ body {
 }
 
 .secondary-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
   padding-top: var(--space-4);
   padding-bottom: var(--space-4);
 }
@@ -272,7 +1148,7 @@ body {
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 50%;
@@ -288,8 +1164,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .secondary-nav .container {
+    gap: var(--space-4);
+  }
+
   .nav-links {
-    gap: var(--space-3);
+    gap: var(--space-2);
   }
 
   .nav-links a {
@@ -322,8 +1202,9 @@ body {
    CURRENT STATE SECTION
    ======================================== */
 
+/* Removed solid background to let clouds show through */
 .current-state-section {
-  background-color: var(--color-bg-secondary);
+  /* background-color: var(--color-bg-secondary); */
 }
 
 .current-state-grid {
@@ -441,6 +1322,13 @@ body {
   text-align: center;
 }
 
+/* Profile Avatar Container - Positioned between header and content */
+.profile-avatar-container {
+  display: flex;
+  justify-content: center;
+  margin: var(--space-8) 0;
+}
+
 /* Profile Avatar - Gravatar Integration */
 .profile-avatar {
   width: 128px;
@@ -451,7 +1339,6 @@ body {
   background-repeat: no-repeat;
   background-color: var(--color-bg-tertiary);
   border: 4px solid var(--color-primary);
-  margin: 0 auto var(--space-6);
   transition: transform var(--transition-base);
   box-shadow: var(--shadow-md);
 }
@@ -464,7 +1351,11 @@ body {
 /* Fallback for no avatar - gradient background */
 .profile-avatar:empty {
   background-color: var(--color-bg-tertiary);
-  background-image: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  background-image: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-primary-dark) 100%
+  );
 }
 
 .about-tagline,
@@ -540,10 +1431,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  .profile-avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--space-6) 0 var(--space-8) 0; /* Extra bottom margin for mobile spacing */
+  }
+
   .profile-avatar {
     width: 96px;
     height: 96px;
-    margin-bottom: var(--space-5);
   }
 
   .about-tagline,
@@ -561,7 +1458,7 @@ body {
   }
 
   .pm-bio {
-    font-size: var(--text-sm);
+    font-size: var(--text-base); /* Match other sections */
   }
 }
 
@@ -569,8 +1466,9 @@ body {
    ACTIVE NOTES / PROJECTS SECTION
    ======================================== */
 
+/* Removed solid background to let clouds show through */
 .projects-section {
-  background-color: var(--color-bg-secondary);
+  /* background-color: var(--color-bg-secondary); */
 }
 
 .projects-grid {
@@ -641,22 +1539,22 @@ body {
 }
 
 .pm-priority-urgent {
-  background-color: #FEE2E2;
+  background-color: #fee2e2;
   color: var(--color-urgent);
 }
 
 .pm-priority-high {
-  background-color: #FEF3C7;
+  background-color: #fef3c7;
   color: var(--color-high);
 }
 
 .pm-priority-normal {
-  background-color: #DBEAFE;
+  background-color: #dbeafe;
   color: var(--color-normal);
 }
 
 .pm-priority-low {
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
   color: var(--color-low);
 }
 
@@ -674,28 +1572,28 @@ body {
 }
 
 .pm-status-blocked {
-  background-color: #FEE2E2;
-  color: #DC2626;
+  background-color: #fee2e2;
+  color: #dc2626;
 }
 
 .pm-status-active {
-  background-color: #D1FAE5;
+  background-color: #d1fae5;
   color: #059669;
 }
 
 .pm-status-completed {
-  background-color: #DBEAFE;
-  color: #2563EB;
+  background-color: #dbeafe;
+  color: #2563eb;
 }
 
 .pm-status-paused {
-  background-color: #FEF3C7;
-  color: #D97706;
+  background-color: #fef3c7;
+  color: #d97706;
 }
 
 .pm-status-archived {
-  background-color: #F3F4F6;
-  color: #6B7280;
+  background-color: #f3f4f6;
+  color: #6b7280;
 }
 
 .pm-project-desc {
@@ -857,9 +1755,35 @@ body {
    ======================================== */
 
 .site-footer {
+  position: relative;
   border-top: 1px solid var(--color-border);
-  padding: var(--space-12) 0;
-  background-color: var(--color-bg-secondary);
+  padding: var(--space-16) 0 var(--space-12) 0;
+  /* background-color: var(--color-bg-secondary); */ /* Removed for light mode */
+  overflow: hidden;
+}
+
+/* Dark mode footer: Solid background for Game of Life contrast */
+[data-theme="dark"] .site-footer {
+  background-color: rgba(10, 10, 15, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* Game of Life Canvas - Living substrate */
+.life-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.55; /* Sweet spot: colors visible, text readable */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ensure footer content is above canvas */
+.site-footer .container {
+  position: relative;
+  z-index: 1;
 }
 
 .footer-indicator {
@@ -874,6 +1798,7 @@ body {
   gap: var(--space-2);
   font-size: var(--text-sm);
   color: var(--color-text-secondary);
+  font-weight: 600; /* Boosted to stand out against Game of Life */
 }
 
 .pm-dot {
@@ -885,7 +1810,8 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -901,7 +1827,7 @@ body {
 .pm-indicator a {
   color: var(--color-primary);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700; /* Bold for maximum visibility */
 }
 
 .pm-indicator a:hover {
@@ -912,12 +1838,13 @@ body {
   text-align: center;
   font-size: var(--text-sm);
   color: var(--color-text-secondary);
+  font-weight: 600; /* Boosted to stand out against Game of Life */
 }
 
 .footer-copyright a {
   color: var(--color-primary);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700; /* Bold for maximum visibility */
 }
 
 .footer-copyright a:hover {
@@ -984,13 +1911,21 @@ body {
 }
 
 .pm-state-item:nth-child(1),
-.state-card:nth-child(1) { animation-delay: 0.1s; }
+.state-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
 .pm-state-item:nth-child(2),
-.state-card:nth-child(2) { animation-delay: 0.2s; }
+.state-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
 .pm-state-item:nth-child(3),
-.state-card:nth-child(3) { animation-delay: 0.3s; }
+.state-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
 .pm-state-item:nth-child(4),
-.state-card:nth-child(4) { animation-delay: 0.4s; }
+.state-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
 
 /* Project cards stagger */
 .pm-project-item {
@@ -998,11 +1933,21 @@ body {
   animation-fill-mode: both;
 }
 
-.pm-project-item:nth-child(1) { animation-delay: 0.1s; }
-.pm-project-item:nth-child(2) { animation-delay: 0.15s; }
-.pm-project-item:nth-child(3) { animation-delay: 0.2s; }
-.pm-project-item:nth-child(4) { animation-delay: 0.25s; }
-.pm-project-item:nth-child(5) { animation-delay: 0.3s; }
+.pm-project-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.pm-project-item:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.pm-project-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.pm-project-item:nth-child(4) {
+  animation-delay: 0.25s;
+}
+.pm-project-item:nth-child(5) {
+  animation-delay: 0.3s;
+}
 
 /* Expertise cards stagger */
 .pm-expertise-card {
@@ -1010,12 +1955,24 @@ body {
   animation-fill-mode: both;
 }
 
-.pm-expertise-card:nth-child(1) { animation-delay: 0.1s; }
-.pm-expertise-card:nth-child(2) { animation-delay: 0.15s; }
-.pm-expertise-card:nth-child(3) { animation-delay: 0.2s; }
-.pm-expertise-card:nth-child(4) { animation-delay: 0.25s; }
-.pm-expertise-card:nth-child(5) { animation-delay: 0.3s; }
-.pm-expertise-card:nth-child(6) { animation-delay: 0.35s; }
+.pm-expertise-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.pm-expertise-card:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.pm-expertise-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.pm-expertise-card:nth-child(4) {
+  animation-delay: 0.25s;
+}
+.pm-expertise-card:nth-child(5) {
+  animation-delay: 0.3s;
+}
+.pm-expertise-card:nth-child(6) {
+  animation-delay: 0.35s;
+}
 
 /* Enhanced hover interactions with 3D transforms */
 .pm-project-item,
@@ -1043,13 +2000,18 @@ body {
 }
 
 .social-links a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(15, 118, 110, 0.1), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(15, 118, 110, 0.1),
+    transparent
+  );
   transition: left 0.5s ease;
 }
 
@@ -1375,4 +2337,249 @@ body {
     max-width: 100%;
     padding: var(--space-6);
   }
+}
+
+/* ========================================
+   DARK MODE
+   ======================================== */
+
+[data-theme="dark"] {
+  /* Colors */
+  --color-primary: #14b8a6; /* Lighter teal for dark bg */
+  --color-primary-light: #5eead4;
+  --color-primary-dark: #0f766e;
+
+  /* Neutrals */
+  --color-bg: #0f1117;
+  --color-bg-secondary: #1a1d29;
+  --color-bg-tertiary: #25293a;
+  --color-text: #f9fafb;
+  --color-text-secondary: #d1d5db;
+  --color-text-tertiary: #9ca3af;
+  --color-border: #374151;
+
+  /* Shadows (darker for dark mode) */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.6),
+    0 4px 6px -4px rgb(0 0 0 / 0.6);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.7),
+    0 8px 10px -6px rgb(0 0 0 / 0.7);
+}
+
+/* Neural Pulse Dark Mode - GRADIENT BARS (Multi-color gradient WITHIN each rotating bar) */
+/* Each bar is a 1/4 or 1/2 segment with 3-4 colors flowing through it! */
+
+[data-theme="dark"] .pulse-ring-0 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 90deg,
+    var(--spectrum-crimson) 90deg,
+    var(--spectrum-orange) 180deg,
+    var(--spectrum-gold) 270deg,
+    transparent 270deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 85px, black 85px, black 140px, transparent 140px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 85px, black 85px, black 140px, transparent 140px);
+  opacity: 0.95; /* Brightest - hot core */
+}
+
+[data-theme="dark"] .pulse-ring-1 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    var(--spectrum-gold) 0deg,
+    var(--spectrum-lime) 90deg,
+    var(--spectrum-cyan) 180deg,
+    transparent 180deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 190px, black 190px, black 250px, transparent 250px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 190px, black 190px, black 250px, transparent 250px);
+  opacity: 0.9;
+}
+
+[data-theme="dark"] .pulse-ring-2 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 90deg,
+    var(--spectrum-cyan) 90deg,
+    var(--spectrum-sky) 180deg,
+    var(--spectrum-indigo) 270deg,
+    transparent 270deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 250px, black 250px, black 300px, transparent 300px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 250px, black 250px, black 300px, transparent 300px);
+  opacity: 0.88;
+}
+
+[data-theme="dark"] .pulse-ring-3 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 180deg,
+    var(--spectrum-lime) 180deg,
+    var(--spectrum-cyan) 270deg,
+    var(--spectrum-sky) 360deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 130px, black 130px, black 200px, transparent 200px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 130px, black 130px, black 200px, transparent 200px);
+  opacity: 0.85;
+}
+
+[data-theme="dark"] .pulse-ring-4 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    var(--spectrum-indigo) 0deg,
+    var(--spectrum-purple) 90deg,
+    var(--spectrum-magenta) 180deg,
+    transparent 180deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 312px, black 312px, black 360px, transparent 360px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 312px, black 312px, black 360px, transparent 360px);
+  opacity: 0.82;
+}
+
+[data-theme="dark"] .pulse-ring-5 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 90deg,
+    var(--spectrum-sky) 90deg,
+    var(--spectrum-indigo) 180deg,
+    var(--spectrum-purple) 270deg,
+    transparent 270deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 382px, black 382px, black 440px, transparent 440px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 382px, black 382px, black 440px, transparent 440px);
+  opacity: 0.78;
+}
+
+[data-theme="dark"] .pulse-ring-6 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 180deg,
+    var(--spectrum-magenta) 180deg,
+    var(--spectrum-pink) 270deg,
+    var(--spectrum-lavender) 360deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 468px, black 468px, black 520px, transparent 520px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 468px, black 468px, black 520px, transparent 520px);
+  opacity: 0.75;
+}
+
+[data-theme="dark"] .pulse-ring-7 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    var(--spectrum-purple) 0deg,
+    var(--spectrum-magenta) 90deg,
+    var(--spectrum-pink) 180deg,
+    transparent 180deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 554px, black 554px, black 600px, transparent 600px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 554px, black 554px, black 600px, transparent 600px);
+  opacity: 0.72;
+}
+
+[data-theme="dark"] .pulse-ring-8 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 90deg,
+    var(--spectrum-pink) 90deg,
+    var(--spectrum-lavender) 180deg,
+    var(--spectrum-crimson) 270deg,
+    transparent 270deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 640px, black 640px, black 690px, transparent 690px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 640px, black 640px, black 690px, transparent 690px);
+  opacity: 0.68;
+}
+
+[data-theme="dark"] .pulse-ring-9 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 180deg,
+    var(--spectrum-orange) 180deg,
+    var(--spectrum-gold) 270deg,
+    var(--spectrum-lime) 360deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 736px, black 736px, black 780px, transparent 780px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 736px, black 736px, black 780px, transparent 780px);
+  opacity: 0.65;
+}
+
+[data-theme="dark"] .pulse-ring-10 {
+  border: none;
+  background: conic-gradient(
+    from 0deg,
+    var(--spectrum-lavender) 0deg,
+    var(--spectrum-crimson) 90deg,
+    var(--spectrum-orange) 180deg,
+    transparent 180deg
+  );
+  -webkit-mask-image: radial-gradient(circle at center, transparent 0, transparent 846px, black 846px, black 870px, transparent 870px);
+  mask-image: radial-gradient(circle at center, transparent 0, transparent 846px, black 846px, black 870px, transparent 870px);
+  opacity: 0.6; /* Softest - gentle perimeter fade */
+}
+
+/* Component-specific dark mode styles */
+[data-theme="dark"] .secondary-nav {
+  background-color: rgba(15, 17, 23, 0.95);
+}
+
+[data-theme="dark"] .theme-toggle {
+  background: var(--color-bg-tertiary);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background: var(--color-bg-secondary);
+  border-color: var(--color-primary);
+}
+
+[data-theme="dark"] .site-header {
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg),
+    var(--color-bg-secondary)
+  );
+}
+
+/* Dark mode: Extra font weight boost for vibrant orb contrast */
+[data-theme="dark"] .site-title {
+  font-weight: 700; /* Extra bold against spectrum orbs */
+}
+
+[data-theme="dark"] .site-subtitle {
+  font-weight: 600; /* Semibold for clarity */
+}
+
+[data-theme="dark"] .social-links a {
+  font-weight: 700; /* Bold for visibility */
+}
+
+[data-theme="dark"] .pm-indicator {
+  font-weight: 700; /* Bold against Game of Life */
+}
+
+[data-theme="dark"] .footer-copyright {
+  font-weight: 700; /* Bold for maximum contrast */
+}
+
+[data-theme="dark"] .pm-modal-content {
+  background: var(--color-bg-secondary);
 }
