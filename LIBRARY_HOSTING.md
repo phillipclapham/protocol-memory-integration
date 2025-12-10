@@ -1,7 +1,7 @@
 # Protocol Memory Library Hosting & Distribution
 
-**Status**: v1.0.0 Released ✅
-**Date**: October 17, 2025
+**Status**: v1.1.0 Released ✅
+**Date**: December 9, 2025
 **Distribution**: jsdelivr CDN via GitHub Releases
 **Public Repo**: [protocol-memory-integration](https://github.com/phillipclapham/protocol-memory-integration)
 
@@ -27,8 +27,8 @@ The protocol-integration.js library is distributed via **jsdelivr CDN** using Gi
 **Specific version** (production - no auto-updates):
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.0/protocol-integration.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.0/protocol-memory.css">
+<script src="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.1.0/protocol-integration.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.1.0/protocol-memory.css">
 ```
 
 ### Self-Hosted
@@ -198,13 +198,19 @@ Bug fixes (backward compatible):
 - Performance improvements
 - Documentation updates
 
-### Current Version: 1.0.0
+### Current Version: 1.1.0
+
+**Version history**:
+
+- **1.1.0**: Section visibility control (hide empty sections)
+- **1.0.1**: Bug fixes
+- **1.0.0**: Initial release
 
 **Next versions**:
 
-- **1.0.1**: Bug fixes only
-- **1.1.0**: New features (e.g., dark mode toggle)
-- **2.0.0**: Breaking changes (e.g., renamed classes)
+- **1.1.x**: Patch fixes
+- **1.2.0**: New features
+- **2.0.0**: Breaking changes
 
 ---
 
@@ -324,6 +330,6 @@ The library is distributed from a separate public repo ([protocol-memory-integra
 
 ---
 
-**Last Updated**: October 17, 2025
-**Current Version**: 1.0.0
-**Status**: Ready for initial release
+**Last Updated**: December 9, 2025
+**Current Version**: 1.1.0
+**Status**: Production (v1.1.0 - Section visibility control)

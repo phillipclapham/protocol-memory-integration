@@ -30,7 +30,7 @@
  * - #pm-expertise: Expertise areas (from contexts)
  * - #pm-last-updated: Last updated indicator with attribution
  *
- * @version 1.0.0
+ * @version 1.1.0
  * @author Protocol Memory
  * @license MIT
  */
@@ -120,14 +120,21 @@ class ProtocolIntegration {
   /**
    * Update Current State section
    * Displays: focus, energy, location, availability
+   * Hides section entirely when no data available
    *
    * @param {Object} currentState - Current state data from API
    */
   updateCurrentState(currentState) {
-    if (!currentState) return;
-
     const stateEl = document.getElementById('pm-current-state');
     if (!stateEl) return;
+
+    // Hide section when no current state data
+    if (!currentState) {
+      this.hideSection(stateEl);
+      return;
+    }
+
+    this.showSection(stateEl);
 
     const { focus, energy, location, availability } = currentState;
 
@@ -211,6 +218,7 @@ class ProtocolIntegration {
   /**
    * Update About section
    * Displays: avatar, tagline, philosophy, bio, current work, expertise summary
+   * Hides section entirely when no data available
    *
    * @async
    * @param {Object} identity - Identity fields
@@ -229,16 +237,25 @@ class ProtocolIntegration {
     const customBio = this.data?.custom_bio || '';
     const currentWork = about?.current_work || '';
     const expertise = identity?.expertise || '';
+    const avatarUrl = this.data?.avatar_url || '';
 
     // Determine which bio to use (prefer custom_bio)
     const bioContent = customBio || bio;
 
+    // Check if ALL content is empty (nothing to show)
+    const hasContent = tagline || philosophy || role || bioContent || currentWork || expertise || avatarUrl;
+    if (!hasContent) {
+      this.hideSection(aboutEl);
+      return;
+    }
+
+    this.showSection(aboutEl);
+
     // Only show tagline if it's different from philosophy (avoid duplication)
     const showTagline = tagline && tagline !== philosophy;
 
-    // Fetch avatar URL (server-side pre-computed OR client-side generated)
+    // Build avatar HTML (server-side pre-computed OR client-side generated)
     let avatarHTML = '';
-    const avatarUrl = this.data?.avatar_url; // Server-side pre-computed (privacy-preserving)
     const email = this.data?.email; // Fallback: client-side generation
 
     if (avatarUrl) {
@@ -275,7 +292,8 @@ class ProtocolIntegration {
 
   /**
    * Update Active Projects section (from conversation seeds)
-   * Displays top 5 seeds ordered by priority
+   * Displays seeds ordered by priority
+   * Hides section entirely when no data available
    *
    * @param {Array} seeds - Array of seed objects
    */
@@ -283,10 +301,13 @@ class ProtocolIntegration {
     const projectsEl = document.getElementById('pm-projects');
     if (!projectsEl) return;
 
+    // Hide section when no seeds
     if (!seeds || seeds.length === 0) {
-      projectsEl.innerHTML = '<p class="pm-empty">No active projects shared publicly.</p>';
+      this.hideSection(projectsEl);
       return;
     }
+
+    this.showSection(projectsEl);
 
     // Priority order for sorting
     const priorityOrder = { urgent: 0, high: 1, normal: 2, low: 3 };
@@ -333,6 +354,7 @@ class ProtocolIntegration {
   /**
    * Update Expertise section (from contexts)
    * Displays expertise areas with preview text and expandable content
+   * Hides section entirely when no data available
    *
    * @param {Array} contexts - Array of context objects
    */
@@ -340,10 +362,13 @@ class ProtocolIntegration {
     const expertiseEl = document.getElementById('pm-expertise');
     if (!expertiseEl) return;
 
+    // Hide section when no contexts
     if (!contexts || contexts.length === 0) {
-      expertiseEl.innerHTML = '<p class="pm-empty">No expertise areas shared publicly.</p>';
+      this.hideSection(expertiseEl);
       return;
     }
+
+    this.showSection(expertiseEl);
 
     const PREVIEW_LENGTH = 500; // Character limit for preview
 
@@ -670,6 +695,30 @@ class ProtocolIntegration {
     if (this.config.debug) {
       console.log('[Protocol Memory]', ...args);
     }
+  }
+
+  /**
+   * Hide a section when no data is available
+   * Clears content and adds pm-section-hidden class for CSS targeting
+   *
+   * @param {HTMLElement} element - The section container element
+   */
+  hideSection(element) {
+    if (!element) return;
+    element.innerHTML = '';
+    element.classList.add('pm-section-hidden');
+    this.log('Section hidden:', element.id);
+  }
+
+  /**
+   * Show a section (remove hidden class)
+   * Called before populating content
+   *
+   * @param {HTMLElement} element - The section container element
+   */
+  showSection(element) {
+    if (!element) return;
+    element.classList.remove('pm-section-hidden');
   }
 }
 

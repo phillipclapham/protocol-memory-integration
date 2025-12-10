@@ -2583,3 +2583,25 @@ body {
 [data-theme="dark"] .pm-modal-content {
   background: var(--color-bg-secondary);
 }
+
+/* ========================================
+   SECTION VISIBILITY CONTROL (v1.1.0)
+   Hide parent sections when content is hidden
+   ======================================== */
+
+/**
+ * When Protocol Memory marks a section container as hidden,
+ * this rule hides the entire parent section element.
+ * Uses :has() selector (Chrome 105+, Safari 15.4+, Firefox 121+)
+ */
+section:has(.pm-section-hidden) {
+  display: none;
+}
+
+/**
+ * Fallback: Direct hiding of the container itself
+ * For older browsers that don't support :has()
+ */
+.pm-section-hidden {
+  display: none;
+}

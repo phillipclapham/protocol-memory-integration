@@ -20,10 +20,10 @@ Complete guide for integrating Protocol Memory public profiles into your website
 
 ```html
 <!-- Via CDN (recommended) -->
-<script src="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.0/protocol-integration.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.1.0/protocol-integration.js"></script>
 
 <!-- Optional: Include CSS for default styling -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.0/protocol-memory.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.1.0/protocol-memory.css">
 ```
 
 **2. Add HTML elements:**
@@ -416,6 +416,26 @@ API responses cached for 5 minutes. Use `Cache-Control: no-cache` header to bypa
 
 ---
 
+### Section Visibility (v1.1.0+)
+
+The library automatically hides sections when no data is available:
+
+| Section | Hidden When |
+|---------|-------------|
+| Current State | User toggles off or no data |
+| About | User toggles off and no avatar/bio |
+| Active Notes | User toggles off or no seeds |
+| Expertise | User toggles off or no contexts |
+
+**CSS behavior**: When a section has no data, the library:
+1. Clears the container content
+2. Adds `pm-section-hidden` class
+3. CSS rule `section:has(.pm-section-hidden)` hides the entire parent section
+
+**Browser support**: The `:has()` selector works in Chrome 105+, Safari 15.4+, Firefox 121+.
+
+---
+
 ## Troubleshooting
 
 ### "Authorization required" error
@@ -467,9 +487,9 @@ API responses cached for 5 minutes. Use `Cache-Control: no-cache` header to bypa
 **Problem**: `protocol-integration.js` returns 404
 
 **Solution**:
-1. Check CDN URL is correct (use versioned URL: `@1.0.0`)
+1. Check CDN URL is correct (use versioned URL: `@1.1.0`)
 2. Wait 5-10 minutes after release for jsdelivr to index
-3. Try cache purge: `https://purge.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.0.0/protocol-integration.js`
+3. Try cache purge: `https://purge.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.1.0/protocol-integration.js`
 
 ---
 
@@ -501,5 +521,5 @@ MIT License - Free to use in personal and commercial projects.
 
 **Powered by [Protocol Memory](https://protocolmemory.com)** - The missing layer between humans and AI.
 
-**Version**: 1.0.0
-**Last Updated**: October 17, 2025
+**Version**: 1.1.0
+**Last Updated**: December 9, 2025
