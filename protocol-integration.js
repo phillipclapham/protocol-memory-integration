@@ -388,13 +388,9 @@ class ProtocolIntegration {
               ${context.type ? `<p class="pm-expertise-type">${this.escapeHtml(context.type)}</p>` : ''}
               ${context.content ? `
                 <div class="pm-expertise-content">
-                  <p class="pm-expertise-preview ${needsExpansion ? 'pm-can-expand' : ''}" data-collapsed="true">
-                    ${this.escapeHtml(previewText)}
-                  </p>
+                  <p class="pm-expertise-preview ${needsExpansion ? 'pm-can-expand' : ''}" data-collapsed="true">${this.escapeHtml(previewText)}</p>
                   ${needsExpansion ? `
-                    <p class="pm-expertise-full" data-full-content style="display: none;">
-                      ${this.escapeHtml(context.content)}
-                    </p>
+                    <p class="pm-expertise-full" data-full-content style="display: none;">${this.escapeHtml(context.content)}</p>
                     <button class="pm-show-more-btn" data-expand-btn>
                       <span data-expand-text>Show more</span> ▼
                     </button>
