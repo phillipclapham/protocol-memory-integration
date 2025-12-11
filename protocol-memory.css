@@ -28,9 +28,8 @@
   --color-error: #ef4444;
 
   /* Priority Badge Colors */
-  --color-urgent: #ef4444;
   --color-high: #f59e0b;
-  --color-normal: #3b82f6;
+  --color-medium: #3b82f6;
   --color-low: #6b7280;
 
   /* Typography */
@@ -482,12 +481,7 @@ body {
 .theme-toggle:hover {
   background: var(--color-bg-secondary);
   border-color: var(--color-primary);
-  transform: translateY(-2px);
   box-shadow: var(--shadow-md);
-}
-
-.theme-toggle:active {
-  transform: translateY(0);
 }
 
 .theme-icon {
@@ -1499,7 +1493,6 @@ body {
 .pm-project-item:hover {
   border-color: var(--color-primary);
   box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
 }
 
 .pm-project-header {
@@ -1538,19 +1531,14 @@ body {
   white-space: nowrap;
 }
 
-.pm-priority-urgent {
-  background-color: #fee2e2;
-  color: var(--color-urgent);
-}
-
 .pm-priority-high {
   background-color: #fef3c7;
   color: var(--color-high);
 }
 
-.pm-priority-normal {
+.pm-priority-medium {
   background-color: #dbeafe;
-  color: var(--color-normal);
+  color: var(--color-medium);
 }
 
 .pm-priority-low {
@@ -1658,7 +1646,6 @@ body {
 .pm-expertise-card:hover {
   border-color: var(--color-primary);
   box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
 }
 
 .pm-expertise-name {
@@ -1682,6 +1669,7 @@ body {
   color: var(--color-text-secondary);
   line-height: 1.6;
   margin-bottom: var(--space-4);
+  white-space: pre-wrap; /* Preserve line breaks in context content */
 }
 
 .pm-expertise-tags {
@@ -1981,16 +1969,6 @@ body {
   will-change: transform;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-}
-
-.pm-project-item:hover,
-.pm-expertise-card:hover {
-  transform: translateY(-4px) scale(1.01);
-}
-
-.pm-state-item:hover,
-.state-card:hover {
-  transform: translateY(-2px);
 }
 
 /* Smooth social link animations */
@@ -2582,26 +2560,4 @@ body {
 
 [data-theme="dark"] .pm-modal-content {
   background: var(--color-bg-secondary);
-}
-
-/* ========================================
-   SECTION VISIBILITY CONTROL (v1.1.0)
-   Hide parent sections when content is hidden
-   ======================================== */
-
-/**
- * When Protocol Memory marks a section container as hidden,
- * this rule hides the entire parent section element.
- * Uses :has() selector (Chrome 105+, Safari 15.4+, Firefox 121+)
- */
-section:has(.pm-section-hidden) {
-  display: none;
-}
-
-/**
- * Fallback: Direct hiding of the container itself
- * For older browsers that don't support :has()
- */
-.pm-section-hidden {
-  display: none;
 }
