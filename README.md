@@ -20,10 +20,10 @@ Complete guide for integrating Protocol Memory public profiles into your website
 
 ```html
 <!-- Via CDN (recommended) -->
-<script src="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.2.0/protocol-integration.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.2.1/protocol-integration.js"></script>
 
 <!-- Optional: Include CSS for default styling -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.2.0/protocol-memory.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.2.1/protocol-memory.css">
 ```
 
 **2. Add HTML elements:**
@@ -487,9 +487,9 @@ The library automatically hides sections when no data is available:
 **Problem**: `protocol-integration.js` returns 404
 
 **Solution**:
-1. Check CDN URL is correct (use versioned URL: `@1.2.0`)
+1. Check CDN URL is correct (use versioned URL: `@1.2.1`)
 2. Wait 5-10 minutes after release for jsdelivr to index
-3. Try cache purge: `https://purge.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.2.0/protocol-integration.js`
+3. Try cache purge: `https://purge.jsdelivr.net/gh/phillipclapham/protocol-memory-integration@1.2.1/protocol-integration.js`
 
 ---
 
@@ -521,5 +521,5 @@ MIT License - Free to use in personal and commercial projects.
 
 **Powered by [Protocol Memory](https://protocolmemory.com)** - The missing layer between humans and AI.
 
-**Version**: 1.2.0
+**Version**: 1.2.1
 **Last Updated**: December 10, 2025
